@@ -15,6 +15,10 @@ spring:
           uri: lb://BANK-ACCOUNT-SERVICE
           predicates:
             - Path=/bank-account/**
+        - id: statement-service
+          uri: lb://BANK-STATEMENT-SERVICE
+          predicates:
+            - Path=/bank-statement/**
 
 eureka:
   client:
