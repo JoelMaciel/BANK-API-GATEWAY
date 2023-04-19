@@ -1,0 +1,13 @@
+
+spring:
+  config:
+    import: 'configserver:'
+  cloud:
+    config:
+      discovery:
+        service-id: bank-config-server
+      username: configserver
+      password: ${PASSWORD}
+  application:
+    name: bank-api-gateway
+
